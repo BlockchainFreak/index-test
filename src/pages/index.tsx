@@ -6,7 +6,7 @@ type PricingPlanProps = {
 
 const PricingPlan = ({ title, price, features }: PricingPlanProps) => (
   <div className="p-4 w-full">
-    <div className="h-full border-2 border-gray-200 rounded-lg overflow-hidden shadow-2xl hover:scale-105 transition ease-in-out">
+    <div className="h-full border-2 border-blue-200 rounded-lg overflow-hidden shadow-2xl hover:scale-105 transition ease-in-out">
       <div className="p-6">
         <h2 className="title-font font-medium text-3xl text-gray-900">{title}</h2>
         <h3 className="text-lg text-gray-500 mb-4">${price}/mo</h3>
@@ -43,7 +43,7 @@ const LandingPage = () => {
   ];
 
   return (
-    <main className="container mx-auto h-screen">
+    <main className="container mx-auto h-screen bg-blue-200">
       <section className="grid place-content-center mt-24">
         <h1 className="text-4xl">
           Landing Page
